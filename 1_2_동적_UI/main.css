@@ -1,0 +1,12 @@
+.alert-box {
+    background-color: #86b9d4;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 5px;
+    display: none;
+
+}
+
+#alert {
+    float: left;
+}

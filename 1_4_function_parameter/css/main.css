@@ -1,0 +1,7 @@
+@import url("./font.css");
+
+div {
+    display: none;
+    background-color: #ffa7df;
+    font-family: "cookie";
+}

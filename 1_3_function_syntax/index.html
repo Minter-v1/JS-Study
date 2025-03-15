@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <button onclick="openAlert()">open</button>
+    <div class="alert" id="alert">
+        나는 귀여운 고양이<button onclick="closeAlert()" id="x">X</button>
+    </div>
+
+
+    <script>
+        function openAlert() {
+            document.getElementById("alert").style.display = "block";
+        }
+        function closeAlert() {
+            document.getElementById("alert").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

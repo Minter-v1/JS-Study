@@ -1,0 +1,15 @@
+@import url("./font.css");
+/*import 라인도 세미콜론 필요*/
+
+.alert {
+    font-family: "cat";
+    font-size: 3em;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: none;
+}
+
+#x {
+    font-family: cat;
+    padding: 10px auto;
+}

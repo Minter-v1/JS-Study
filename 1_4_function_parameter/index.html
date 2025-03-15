@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="id">아이디를 입력하세요</div>
+    <div id="pw">비밀번호를 입력하세요</div>
+
+    <button onclick="viewOrder('id')">버튼1</button>
+    <button onclick="viewOrder('pw')">버튼2</button>
+
+    <script>
+        function viewOrder(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
