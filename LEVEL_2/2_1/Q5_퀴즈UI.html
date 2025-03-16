@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>태조 이성계가 태어난 년도는?</p>
+    <input type="text" id="usr-input">
+    <button id="send-answer">제출</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        //유저가 답을 맞추면 성공
+        //3번 찍어서 못맞추면 멍청이를 띄우기
+        var cnt = 0;
+        $("#send-answer").on("click", function () {
+            //var cnt = 0; // 여기 있으면 클릭할때마다 0으로 초기화 됨
+
+            if ($("#usr-input").val() == "1335") {
+                alert("성공");
+                cnt++;
+            }
+            else if (cnt <= 3) {
+                alert("정답이 아닙니다.");
+                cnt++;
+            }
+            else {
+                alert("멍청이");
+                cnt = 0; //전역변수 초기화가 가능하다!
+            }
+
+        });
+    </script>
+</body>
+
+</html>

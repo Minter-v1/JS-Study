@@ -1,0 +1,38 @@
+<!-- Q1. 변수를 만들어봅시다
+
+ 
+
+내 나이와 출신지역을 자바스크립트 변수에 저장해봅시다. 
+
+나이는 맨날 변하니 재할당가능한 변수,
+
+출신지역은 바뀌지 않으니 재할당불가능한 변수에 저장해보십시오. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var age = 25;
+        var name = 'lee ';
+        let hometown = "Daejeon"; //location은 js에 이미 존재하는 무언가이므로 하튼 변수명 사용 안됨
+
+        function showName() { //camel표기법으로 함수 작명하기!
+            var name = 'kim';
+            var id = 1;
+            console.log(name); //예상 kim 출력
+
+        }
+
+        showName();
+        console.log(id); //scope 밖이라서 접근 불가(id is not defined)
+    </script>
+</body>
+
+</html>

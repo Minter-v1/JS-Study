@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="alert alert-danger">
+        <span id="time">5</span>초 이내 구매시 사은품 증정!
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        //5라는 문자를 찾는다
+        //1씩 감소시킨다 -> 수정한다?
+        //0이 된 순간 div 태그를 안보이게 한다.
+        var cnt = 5;
+
+        setInterval(function () {
+            cnt -= 1;
+            if (cnt >= 0) {
+                $("#time").html(cnt);//cnt가 계속 줄어들어서 0이 되더라도 interval은 1초마다 계속 반복임
+            }
+
+            if (cnt == 0) {
+                $(".alert").hide(); //여기 있어야함. 밖에 있으면 div 안없어짐 -> 일종의 break처럼 보이는 애랄까..
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
