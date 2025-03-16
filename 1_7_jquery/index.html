@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="lg">로그인</button>
+    <div id="md" class="black-bg">
+        <div class="white-bg">
+            <h4>로그인하세요</h4>
+            <button class="btn btn-danger" id="close">닫기</button>
+        </div>
+    </div>
+
+    <script src="./jquery-3.7.1.min.js"></script> <!-- js에서 라이브러리 임포트 하는 방식 -->
+    <script>
+        $("#lg").on("click", function () {
+            $(".black-bg").addClass("show-modal");
+
+        });
+
+        $("#close").on("click", function () {
+            $(".black-bg").removeClass("show-modal");
+        });
+    </script>
+
+</body>
+
+</html>

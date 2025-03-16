@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <input type="text" id="test">
+            <input type="button" id="test2" value="전송">
+        </div>
+    </form>
+
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $("#test2").on("click", function () {
+            let id = $("#test").val();
+
+            if (id <= 0) {
+                alert("아이디 입력해라");
+            } else {
+                alert("WW");
+            }
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

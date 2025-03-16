@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="test">
+        <input type="text" id="number">
+        <button type="submit">전송</button>
+    </form>
+
+
+    <script>
+        //입력을 받느나
+        //입력값을 셀렉터로 찾아온다.
+        //입력 값을 조건문을 건다
+        //alert 발생
+
+        //아벤트리스너 실행
+        document.getElementById("test").addEventListener("submit", function () {
+            let num = document.getElementById("number").value.trim();
+
+            if (num < 0 || num > 100) {
+                alert("장난치지마라");
+            }
+        })
+    </script>
+</body>
+
+</html>
